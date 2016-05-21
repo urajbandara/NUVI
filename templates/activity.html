@@ -1,0 +1,25 @@
+﻿
+<div class="container">
+    <div class="row">
+        <a href="#/provider">Back to Providers</a>
+    </div>
+    <div class="page-header">
+        <h1> {{provider}} Activities</h1>
+    </div>
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1">
+            <div class="list-group">
+                <div ng-repeat="act in activities" class="list-group-item">
+                    <div class="list-group-item-heading">
+                        <h3>{{act.actor_name}} <small>{{act.actor_description}}</small></h3> <p>{{act.provider}}</p>
+                    </div>
+                    <div class="list-group-item-info">
+                        <p ng-hide="act.activity_message.indexOf('placehold')>-1">{{act.activity_message}}</p>
+                        <span>{{act.activity_likes}} <i class="glyphicon glyphicon-thumbs-up"></i></span>  <span>{{act.activity_shares}} <i class="glyphicon glyphicon-share"></i></span>
+                        <p>{{act.activity_date}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

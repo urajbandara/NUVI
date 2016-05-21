@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="list-group">
+                <div ng-repeat="greet in greeting" class="list-group-item">
+                    <div class="list-group-item-heading">
+                        <h1>{{greet.name}}</h1>
+                    </div>
+                    <div class="list-group-item-info">
+                        <span class="badge">{{greet.count}}</span>
+                        <a href="#/activities/{{greet.name}}">View Activities</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
